@@ -1,4 +1,4 @@
-package org.example;
+package API.Testing;
 
 import io.restassured.RestAssured;
 
