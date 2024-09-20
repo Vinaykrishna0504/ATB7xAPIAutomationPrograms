@@ -23,13 +23,35 @@ public class BDDStyleGet {
         // BDD - framework Different - Gherkin syntax - (Given , when, then)
         // Non BDD and Still Gherkin syntax(using classes)
 
+
+        test1();
+        test2();
+
+
+    }
+
+    private static void test1(){
         RestAssured
                 .given()
                 .baseUri("https://api.zippopotam.us")
-                .basePath("/IN/560016")
+                .basePath("/IN/560001")
                 .when()
                 .get()
                 .then().log().all()
                 .statusCode(200);
     }
+
+    private static void test2(){
+        RestAssured
+                .given()
+                .baseUri("https://api.zippopotam.us")
+                .basePath("/IN/-1")
+                .when()
+                .get()
+                .then().log().all()
+                .statusCode(201);
+    }
+
+
+
 }
