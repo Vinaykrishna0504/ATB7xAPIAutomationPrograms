@@ -43,11 +43,11 @@ public class NonBDDPUT {
     public void test_put_positive_tc(){
         // POST - Auth - token
 
-        String token = "a3aa57d3fd0902d";
-        String bookingid = "2666";
+        String token = "2d43a1088623216";
+        String bookingid = "2972";
 
 
-        String payload_PUT = "{" +
+        String payload_PUT = "{\n" +
                 "\n" +
                 "    \"firstname\" : \"Vinay\",\n" +
                 "    \"lastname\" : \"Brown\",\n" +
