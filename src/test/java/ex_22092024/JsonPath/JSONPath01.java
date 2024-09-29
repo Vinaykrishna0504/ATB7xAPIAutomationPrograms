@@ -1,4 +1,4 @@
-package ex_22092024;
+package ex_22092024.JsonPath;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -6,8 +6,6 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
-import org.hamcrest.Matchers;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
